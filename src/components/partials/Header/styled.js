@@ -15,5 +15,16 @@ border-bottom: 1px solid #CCC;
     flex:1;
     display: flex;
     align-items: center;
+
+    .logo-1,
+    .logo-2,
+    .logo-3 {
+        font-size: 27px;
+        font-weight: bold;
+    }
+
+    .logo-1 { color: #FF0000; }
+    .logo-2 { color: #00FF00; }
+    .logo-3 { color: #000FF; }
 }
 `;
