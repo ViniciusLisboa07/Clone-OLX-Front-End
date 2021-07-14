@@ -11,10 +11,15 @@ border-bottom: 1px solid #CCC;
     display: flex;
 }
 
+a {
+    text-decoration: none; 
+}
+
 .logo {
     flex:1;
     display: flex;
     align-items: center;
+    height: 50px; 
 
     .logo-1,
     .logo-2,
@@ -25,6 +30,53 @@ border-bottom: 1px solid #CCC;
 
     .logo-1 { color: #FF0000; }
     .logo-2 { color: #00FF00; }
-    .logo-3 { color: #000FF; }
+    .logo-3 { color: #0000FF; }
+}
+
+nav {
+    paddind-top: 10px;
+    paddind-bottom: 10px;
+
+    ul, li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        height: 50px;
+    }
+
+    li {
+        margin-left: 20px;
+        margin-right: 20px;
+
+        a {
+            color: #000000;
+            font-size: 14px;
+            text-decoration: none;
+ 
+            
+            &:hover{
+                color: #333;
+            }
+       
+            &.button{
+                background-color: #FF8100;
+                border-radius: 4px;
+                color: white;
+                padding: 5px 10px;
+            }
+            
+            
+            &.button:hover{
+                background-color: #E57706;
+            }
+        }
+        
+    }
+    
 }
 `;
