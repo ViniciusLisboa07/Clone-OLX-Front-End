@@ -1,7 +1,7 @@
 import Cookies from "js-cookie";
-import qs from 'qs'
+import qs from 'qs';
 
-const BASEAPI = 'http://alunos.b7web.com.br:501/';
+const BASEAPI = 'http://localhost:5000';
 
 
 const apiFetchPost = async(endpoint, body) => {
@@ -32,7 +32,7 @@ const apiFetchPost = async(endpoint, body) => {
 
 };
 
-const apiFetchGet = async(endpoint, body = []) => {
+const apiFetchGet = async (endpoint, body = []) => {
     if(!body.token){
         let token = Cookies.get('token');
         if(token) {
@@ -40,24 +40,22 @@ const apiFetchGet = async(endpoint, body = []) => {
         }
     }
     
-    const res = await fetch(`${BASEAPI+endpoint}?${qs.stringify(body)}`);
-
-    const json = await res.json(body);
+    const res  = await fetch(`${BASEAPI+endpoint}?${qs.stringify(body)}`);
+    const json = await res.json();
 
     if(json.notallowed){
-        window.location.href = "/";
+        window.location.href = "/singin";
         return;
     }
 
     return json;
-
 };
 
 const OLXApi = {
     login: async(email, password) =>{
         
         const json = await apiFetchPost(
-            '/users/signin',
+            '/users',
             {email, password}
         )
         return json;
@@ -65,7 +63,7 @@ const OLXApi = {
 
     register:async (name, email, password, stateLoc) => {
         const json = await apiFetchPost(
-            '/user/signup',
+            '/users/',
             {name, email, password, state: stateLoc}
         )
         return json;
@@ -75,9 +73,9 @@ const OLXApi = {
         const json = await apiFetchGet(
             '/states'
         );
-        return json.states;
-    }
 
+        return json;
+    }
 
 }
 

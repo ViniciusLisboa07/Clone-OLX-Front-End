@@ -19,16 +19,16 @@ const Page = () => {
         e.preventDefault();
         setDisabled(true);
         setError('');
-
-        // const json = await api.login(email, password);
- 
-        // if(json.error) {
-        //    setError(json.error)
-        // } else {
-        //    doLogin(json.token, rememberPassword);
-        //    window.location.href = '/'
-        // }
-
+        
+        const json = await api.login(email, password);
+        
+        if(json.error) {
+            setError(json.error)
+        } else {
+            doLogin(json.token, rememberPassword);
+            window.location.href = '/'
+        }
+        
         setDisabled(false);
     }
 
@@ -37,11 +37,13 @@ const Page = () => {
         <PageContainer>
             <PageTitle>Login</PageTitle>
             <PageArea>
+
                 {error &&
                     <ErrorMessage>
                         {error}
                     </ErrorMessage>
                 }
+
                 <form onSubmit={handleSubmit}>
                     <label className="area">
                         <div className="area--title">
@@ -75,11 +77,11 @@ const Page = () => {
                         <div className="area--title"> Lembrar Senha </div>
                         <div className="area--input">
                             <input
-                                type="password"
+                                type="checkbox"
                                 disabled={disabled}
                                 value={rememberPassword}
                                 onChange={e => setRemeberPassword(e.target.password)}
-                                required
+                                
                             />
                         </div>
                     </label>

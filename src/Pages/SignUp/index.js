@@ -12,19 +12,25 @@ const Page = () => {
     const [password, setPassword] = useState('');
     const [email, setEmail] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
-    
+
     const [stateList, setStateList] = useState([]);
 
     const [disabled, setDisabled] = useState(false);
     const [error, setError] = useState('');
 
     useEffect(() => {
+
         const getStates = async () => {
-            const slist = await api.getStates();
-            setStateList(slist);
+            const sList = await api.getStates();
+            console.log(sList);
+            console.log(typeof sList);
+            console.log('sList');
+
+            setStateList(sList);
         }
 
         getStates();
+
     }, []);
 
     const handleSubmit = async (e) => {
@@ -32,18 +38,14 @@ const Page = () => {
         setDisabled(true);
         setError('');
 
-        if(password != confirmPassword){
-            setError('Senhas não batem!');
-            return;
-        }
 
-        const json = await api.login(name, email, password, stateLoc);
+        const json = await api.register(name, email, password, stateLoc);
 
-        if(json.error) {
-           setError(json.error)
+        if (json.error) {
+            setError(json.error)
         } else {
-           doLogin(json.token);
-           window.location.href = '/'
+            doLogin(json.token);
+            window.location.href = '/'
         }
 
         setDisabled(false);
@@ -89,9 +91,11 @@ const Page = () => {
                         <div className="area--input">
                             <select value={stateLoc} onChange={e => setStateLoc(e.target.value)} required>
                                 <option></option>
-                                {stateList.map((i, k) => {
-                                    <option key={k} value={i._id}>{i.name}</option>
-                                })}
+                                {stateList &&
+                                    stateList.map((i, k) =>
+                                        <option key={k} value={i._id}>{i.name}</option>
+                                    )
+                                }
                             </select>
                         </div>
                     </label>
