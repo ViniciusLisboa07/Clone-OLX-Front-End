@@ -37,10 +37,16 @@ const Page = () => {
         e.preventDefault();
         setDisabled(true);
         setError('');
-
+        
+        if (password !== confirmPassword) {
+            setError('Senhas diferentes');
+            setDisabled(false);
+            return;
+        }
 
         const json = await api.register(name, email, password, stateLoc);
-
+        console.log(json);
+         
         if (json.error) {
             setError(json.error)
         } else {
@@ -89,7 +95,7 @@ const Page = () => {
                     <label className="area">
                         <div className="area--title">Estado</div>
                         <div className="area--input">
-                            <select value={stateLoc} onChange={e => setStateLoc(e.target.value)} required>
+                            <select disabled={disabled} value={stateLoc} onChange={e => setStateLoc(e.target.value)} required>
                                 <option></option>
                                 {stateList &&
                                     stateList.map((i, k) =>
@@ -107,6 +113,18 @@ const Page = () => {
                                 disabled={disabled}
                                 value={password}
                                 onChange={e => setPassword(e.target.password)}
+                                required
+                            />
+                        </div>
+                    </label>
+                    <label className="area">
+                        <div className="area--title">Confirmar Senha</div>
+                        <div className="area--input">
+                            <input
+                                type="password"
+                                disabled={disabled}
+                                value={confirmPassword}
+                                onChange={e => setConfirmPassword(e.target.password)}
                                 required
                             />
                         </div>
