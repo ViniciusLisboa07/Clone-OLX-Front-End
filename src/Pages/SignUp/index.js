@@ -39,6 +39,7 @@ const Page = () => {
         setError('');
         
         if (password !== confirmPassword) {
+            console.log("Senhas diferentes")
             setError('Senhas diferentes');
             setDisabled(false);
             return;
@@ -112,7 +113,7 @@ const Page = () => {
                                 type="password"
                                 disabled={disabled}
                                 value={password}
-                                onChange={e => setPassword(e.target.password)}
+                                onChange={e => setPassword(e.target.value)}
                                 required
                             />
                         </div>
@@ -124,7 +125,7 @@ const Page = () => {
                                 type="password"
                                 disabled={disabled}
                                 value={confirmPassword}
-                                onChange={e => setConfirmPassword(e.target.password)}
+                                onChange={e => setConfirmPassword(e.target.value)}
                                 required
                             />
                         </div>

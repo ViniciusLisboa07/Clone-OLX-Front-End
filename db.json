@@ -1,20 +1,41 @@
 {
-    "users": [
-      {
-        "name": "Vinicius",
-        "email": "viniciuslisboa1001@gmail.com",
-        "stateLoc": "PR",
-        "password": "123"
-      }
-    ],
-    "states": [
-      {
-        "_id": 1,
-        "name": "PR"
-      },
-      {
-        "_id": 2,
-        "name": "CE"
-      }
-    ]
-  }
+  "users": [
+    {
+      "id": 1,
+      "name": "Vinicius",
+      "email": "viniciuslisboa1001@gmail.com",
+      "stateLoc": "PR",
+      "password": "123"
+    },
+    {
+      "id": 2,
+      "name": "Ketley",
+      "email": "ket@gmail.com",
+      "stateLoc": "PR",
+      "password": "123"
+    },
+    {
+      "name": "vini123",
+      "email": "vini@gmail.com",
+      "state": "PR",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "name": "teste",
+      "password": "1234",
+      "state": "1",
+      "id": 4
+    }
+  ],
+  "states": [
+    {
+      "_id": 1,
+      "name": "PR"
+    },
+    {
+      "_id": 2,
+      "name": "CE"
+    }
+  ]
+}

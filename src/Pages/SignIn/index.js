@@ -22,8 +22,8 @@ const Page = () => {
         
         const json = await api.login(email, password);
         
-        if(json.error) {
-            setError(json.error)
+        if(!json[0].name) {
+            setError(json)
         } else {
             doLogin(json.token, rememberPassword);
             window.location.href = '/'
@@ -54,7 +54,7 @@ const Page = () => {
                                 type="email"
                                 disabled={disabled}
                                 value={email}
-                                onChange={e => setEmail(e.target.email)}
+                                onChange={e => setEmail(e.target.value)}
                                 required
                             />
                         </div>
@@ -67,7 +67,7 @@ const Page = () => {
                                 type="password"
                                 disabled={disabled}
                                 value={password}
-                                onChange={e => setPassword(e.target.password)}
+                                onChange={e => setPassword(e.target.value)}
                                 required
                             />
                         </div>
@@ -80,8 +80,7 @@ const Page = () => {
                                 type="checkbox"
                                 disabled={disabled}
                                 value={rememberPassword}
-                                onChange={e => setRemeberPassword(e.target.password)}
-                                
+                                onChange={e => setRemeberPassword(String(e.target.value))}
                             />
                         </div>
                     </label>

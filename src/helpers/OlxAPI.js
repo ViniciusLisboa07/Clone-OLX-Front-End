@@ -52,24 +52,42 @@ const apiFetchGet = async (endpoint, body = []) => {
 };
 
 const OLXApi = {
+    
     login: async(email, password) =>{
         
-        const json = await apiFetchPost(
+        const json = await apiFetchGet(
             '/users',
-            {email, password}
+            { email }
         )
+
+        console.log(json)
+
+        if (!json[0].email) {
+            var error = "Usuário inexistente";
+            return error;
+        }
+
+        if(json[0].password != password){
+            console.log(typeof password)
+            var error = "Senha incorreta!";
+            return error;
+        }
+
         return json;
     },
 
     register:async (name, email, password, stateLoc) => {
+        
         const json = await apiFetchPost(
             '/users/',
             {name, email, password, state: stateLoc}
         )
+
         return json;
     },
 
     getStates: async () => {
+        
         const json = await apiFetchGet(
             '/states'
         );
