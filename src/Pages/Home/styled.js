@@ -1,13 +1,11 @@
 import styled from "styled-components";
 
 export const SearchArea = styled.div`
-    background-color: #DDD;
+    background-color: #6E0AD6;
     border-bottom: 2px solid #CCC;
     padding: 20px 0;
 
     .searchBox {
-        background-color: #9BB83C;
-        padding: 20px 15px;
         border-radius: 5px;
         box-shadow: 1px 2px 0.3px rgba(0,0,0,0, 0.2);
         display: flex;
@@ -17,21 +15,22 @@ export const SearchArea = styled.div`
             display: flex;
 
             input, select {
-                height: 40px;
+                height: 60px;
                 border: 0;
-                border-radius: 5px;
                 outline: 0;
                 font-size: 15px;
                 color: #000;
-                margin-right: 20px;
+                /* margin-right: 20px; */
             }
-
+            
             input{
                 flex: 1;
+                border-radius: 5px 0px 0px 5px;
                 padding: 0 10px;
             }
-
+            
             select {
+                border-radius: 0px 5px 5px 0px;
                 width: 200px;
             }
 
@@ -63,10 +62,14 @@ export const SearchArea = styled.div`
             width: 33%;
             display: flex;
             align-items: center;
-            color: white;
+            color: #555;
             text-decoration: none;
             height: 50px;
             margin-bottom: 20px;
+            
+            span:hover{
+                color: black;
+            }
 
             img {
                 width: 45px;
