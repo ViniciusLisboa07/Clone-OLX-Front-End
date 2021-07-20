@@ -9,6 +9,7 @@ border-bottom: 1px solid #CCC;
     max-width: 1000px;
     margin: auto;
     display: flex;
+    background-color: #CCC;
 }
 
 a {
@@ -34,9 +35,6 @@ a {
 }
 
 nav {
-    paddind-top: 10px;
-    paddind-bottom: 10px;
-
     ul, li {
         margin: 0;
         padding: 0;
@@ -46,7 +44,7 @@ nav {
     ul {
         display: flex;
         align-items: center;
-        height: 50px;
+        height: 55px;
     }
 
     li {

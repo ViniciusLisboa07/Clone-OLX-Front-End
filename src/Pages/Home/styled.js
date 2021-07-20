@@ -30,7 +30,6 @@ export const SearchArea = styled.div`
             }
             
             select {
-                border-radius: 0px 5px 5px 0px;
                 width: 200px;
             }
 
@@ -38,9 +37,9 @@ export const SearchArea = styled.div`
                 background-color: #48AEEF;
                 font-size: 15px;
                 border: 0;
-                border-radius:  5px;
+                border-radius: 0px 5px 5px 0px;
                 color: white;
-                height: 40px;
+                height: 60px;
                 padding: 0 20px;
                 cursor: pointer;
                 transition: all ease 0.3;
@@ -55,26 +54,38 @@ export const SearchArea = styled.div`
     .categoryList{
         display: flex;
         flex-wrap: wrap;
-    
         margin-top:  20px;
 
         .categoryItem{
             width: 33%;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            color: #555;
+            color: #fff;
             text-decoration: none;
-            height: 50px;
+            height: 100px;
             margin-bottom: 20px;
             
+            .circle {
+                width: 58px;
+                height: 58px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100px;
+                background-color: #CCC;
+                transition: all 0.5s;
+            }
+
             span:hover{
-                color: black;
+                color: #CCC;
             }
 
             img {
-                width: 45px;
-                height: 45px;
-                margin-right: 10px;
+                width: 30px;
+                height: 30px;
+                /* margin-right: 10px; */
             }
         }
     }

@@ -59,7 +59,9 @@ const Page = () => {
                             categories.map((i, k) =>
 
                                 <Link key={k} to={`/ads?cat=${i.name}`} className="categoryItem">
-                                    <img src={i.img} alt="" />
+                                    <div className="circle">
+                                        <img src={i.img} alt="" />
+                                    </div>
                                     <span>{i.name}</span>
                                 </Link>
 
