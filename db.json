@@ -37,5 +37,22 @@
       "_id": 2,
       "name": "CE"
     }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Carros",
+      "img": "assets\\car-directions_icon-icons.com_72824.png"
+    },
+    {
+      "name": "Eletrodomesticos",
+      "img": "assets\\976599-all-in-one-appliances-desktop-display-electronics-pc-screen_106534.png",
+      "id": 2
+    },
+    {
+      "name": "Roupas",
+      "img": "assets\\clothes-label_icon-icons.com_68566.png",
+      "id": 3
+    }
   ]
 }

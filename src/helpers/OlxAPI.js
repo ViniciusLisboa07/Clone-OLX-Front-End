@@ -93,7 +93,19 @@ const OLXApi = {
         );
 
         return json;
+    },
+
+    getCategories: async () => {
+
+        const json = await apiFetchGet(
+            '/categories'
+        );
+
+        console.log(json);
+
+        return json;
     }
+
 
 }
 

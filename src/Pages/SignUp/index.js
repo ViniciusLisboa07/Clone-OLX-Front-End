@@ -113,7 +113,7 @@ const Page = () => {
                                 type="password"
                                 disabled={disabled}
                                 value={password}
-                                onChange={e => setPassword(e.target.value)}
+                                onChange={e => setPassword(e.target.password)}
                                 required
                             />
                         </div>
