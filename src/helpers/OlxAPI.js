@@ -112,6 +112,16 @@ const OLXApi = {
         );
 
         return json;
+    },
+
+    getAd: async (id, other = false) => {
+
+        const json = await apiFetchGet(
+            '/ads/',
+            {id}
+        );
+
+        return json;
     }
 
 }

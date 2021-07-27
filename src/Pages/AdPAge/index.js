@@ -10,7 +10,19 @@ const Page = () => {
     const { id } = useParams();
 
     const [loading, setLoading] = useState(true);
-    const [adInfo, setAdInfo] = useState([]);
+    const [adInfo, setAdInfo] = useState({});
+
+
+    useEffect(() => {
+        const getAdInfo = async (id) => {
+            const json = await api.getAd(id, true);
+            setAdInfo(json[0]);
+            setLoading(false);
+        }
+
+        getAdInfo(id);
+    }, [])
+
 
     return (
         <PageContainer>
@@ -24,6 +36,9 @@ const Page = () => {
                         <div className="adInfo">
                             <div className="adName">
                                 {loading && <Fake height={20} />}
+                                {adInfo.title &&
+                                    <h2>{adInfo.title}</h2>
+                                }
                             </div>
                             <div className="adDescription">
                                 {loading && <Fake height={100} />}
