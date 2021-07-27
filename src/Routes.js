@@ -27,6 +27,10 @@ export default () => {
             <Route exact path="/signup">
                 <SignUp />
             </Route>
+
+            <Route exact path="/ad/:id">
+                <AdPage />
+            </Route>
             
             <Route>
                 <NotFound/>

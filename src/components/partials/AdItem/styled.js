@@ -12,7 +12,7 @@ a {
 
     .itemImg img{
         width: 100%;
-        border: 5px;
+        border-radius: 5px;
     }
 
     .itemName{

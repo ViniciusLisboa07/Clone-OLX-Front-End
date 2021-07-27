@@ -101,11 +101,8 @@ const OLXApi = {
             '/categories'
         );
 
-        console.log(json);
-
         return json;
     },
-
 
     getAds: async (options) => {
 
@@ -113,8 +110,6 @@ const OLXApi = {
             '/ads',
             options
         );
-
-        console.log(json);
 
         return json;
     }

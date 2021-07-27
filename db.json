@@ -59,56 +59,79 @@
     {
       "title": "Blusa",
       "price": 35,
-      "priceNegociable": false,
+      "priceNegotiable": false,
+      "img": "assets\\1024px-Solid_grey.svg.png",
       "id": 1
     },
     {
       "title": "Blusa Verde",
       "price": 25,
-      "priceNegociable": true,
+      "priceNegotiable": true,
+      "img": "assets\\1024px-Solid_grey.svg.png",
       "id": 2
     },
     {
       "title": "Carro",
       "price": 25000,
-      "priceNegociable": true,
+      "priceNegotiable": true,
+      "img": "assets\\1024px-Solid_grey.svg.png",
       "id": 3
     },
     {
       "title": "Moto",
       "price": 5000,
-      "priceNegociable": true,
+      "priceNegotiable": true,
+      "img": "assets\\1024px-Solid_grey.svg.png",
       "id": 4
     },
     {
       "title": "Televisão",
       "price": 1000,
-      "priceNegociable": true,
+      "priceNegotiable": true,
+      "img": "assets\\1024px-Solid_grey.svg.png",
       "id": 5
     },
     {
       "title": "Geladeira",
       "price": 1000,
-      "priceNegociable": false,
+      "priceNegotiable": false,
+      "img": "assets\\1024px-Solid_grey.svg.png",
       "id": 6
     },
     {
       "title": "Camisa",
       "price": 20,
-      "priceNegociable": false,
+      "priceNegotiable": false,
+      "img": "assets\\1024px-Solid_grey.svg.png",
       "id": 7
     },
     {
       "title": "Camisa Azul",
       "price": 20,
-      "priceNegociable": false,
+      "priceNegotiable": false,
+      "img": "assets\\1024px-Solid_grey.svg.png",
       "id": 8
     },
     {
       "title": "Camisa Vermelha",
       "price": 20,
-      "priceNegociable": false,
+      "priceNegotiable": false,
+      "img": "assets\\1024px-Solid_grey.svg.png",
       "id": 9
+    },
+    {
+      "title": "Camisa Vermelha",
+      "price": 20,
+      "priceNegotiable": false,
+      "img": "assets\\1024px-Solid_grey.svg.png",
+      "id": 10
+    },
+    {
+      "title": "Camisa Vermelha",
+      "price": 20,
+      "priceNegotiable": false,
+      "img": "assets\\1024px-Solid_grey.svg.png",
+      "id": 11
     }
   ]
 }

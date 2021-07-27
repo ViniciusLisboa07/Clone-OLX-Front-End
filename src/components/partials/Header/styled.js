@@ -9,7 +9,7 @@ border-bottom: 1px solid #CCC;
     max-width: 1000px;
     margin: auto;
     display: flex;
-    background-color: #CCC;
+    background-color: #FFF;
 }
 
 a {
