@@ -58,79 +58,149 @@
   "ads": [
     {
       "title": "Blusa",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "price": 35,
       "priceNegotiable": false,
       "img": "assets\\1024px-Solid_grey.svg.png",
+      "images": [
+        "assets\\1.jpg",
+        "assets\\2.jpg",
+        "assets\\3.jpg"
+      ],
       "id": 1
     },
     {
       "title": "Blusa Verde",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "price": 25,
       "priceNegotiable": true,
       "img": "assets\\1024px-Solid_grey.svg.png",
+      "images": [
+        "assets\\1.jpg",
+        "assets\\2.jpg",
+        "assets\\3.jpg"
+      ],
       "id": 2
     },
     {
       "title": "Carro",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "price": 25000,
       "priceNegotiable": true,
       "img": "assets\\1024px-Solid_grey.svg.png",
+      "images": [
+        "assets\\1.jpg",
+        "assets\\2.jpg",
+        "assets\\3.jpg"
+      ],
       "id": 3
     },
     {
       "title": "Moto",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "price": 5000,
       "priceNegotiable": true,
       "img": "assets\\1024px-Solid_grey.svg.png",
+      "images": [
+        "assets\\1.jpg",
+        "assets\\2.jpg",
+        "assets\\3.jpg"
+      ],
       "id": 4
     },
     {
       "title": "Televisão",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "price": 1000,
       "priceNegotiable": true,
       "img": "assets\\1024px-Solid_grey.svg.png",
+      "images": [
+        "assets\\1.jpg",
+        "assets\\2.jpg",
+        "assets\\3.jpg"
+      ],
       "id": 5
     },
     {
       "title": "Geladeira",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "price": 1000,
       "priceNegotiable": false,
       "img": "assets\\1024px-Solid_grey.svg.png",
+      "images": [
+        {"img": "assets\\1.jpg"},
+        {"img": "assets\\2.jpg"},
+        {"img": "assets\\3.jpg"}
+      ],
+      "userInfo": [
+        {"mail": "viniciuslisboa1001@gmail.com"}
+      ],
       "id": 6
     },
     {
       "title": "Camisa",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "price": 20,
       "priceNegotiable": false,
       "img": "assets\\1024px-Solid_grey.svg.png",
+      "images": [
+        "assets\\1.jpg",
+        "assets\\2.jpg",
+        "assets\\3.jpg"
+      ],
       "id": 7
     },
     {
       "title": "Camisa Azul",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "price": 20,
       "priceNegotiable": false,
       "img": "assets\\1024px-Solid_grey.svg.png",
+      "images": [
+        "assets\\1.jpg",
+        "assets\\2.jpg",
+        "assets\\3.jpg"
+      ],
       "id": 8
     },
     {
       "title": "Camisa Vermelha",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "price": 20,
       "priceNegotiable": false,
       "img": "assets\\1024px-Solid_grey.svg.png",
+      "images": [
+        "assets\\1.jpg",
+        "assets\\2.jpg",
+        "assets\\3.jpg"
+      ],
       "id": 9
     },
     {
       "title": "Camisa Vermelha",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "price": 20,
       "priceNegotiable": false,
       "img": "assets\\1024px-Solid_grey.svg.png",
+      "images": [
+        "assets\\1024px-Solid_grey.svg.png",
+        "assets\\1.jpg",
+        "assets\\2.jpg",
+        "assets\\3.jpg"
+      ],
       "id": 10
     },
     {
       "title": "Camisa Vermelha",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "price": 20,
       "priceNegotiable": false,
       "img": "assets\\1024px-Solid_grey.svg.png",
+      "images": [
+        "assets\\1.jpg",
+        "assets\\2.jpg",
+        "assets\\3.jpg"
+      ],
       "id": 11
     }
   ]

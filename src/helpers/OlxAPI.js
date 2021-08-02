@@ -3,7 +3,6 @@ import qs from 'qs';
 
 const BASEAPI = 'http://localhost:5000';
 
-
 const apiFetchPost = async(endpoint, body) => {
     if(!body.token){
         let token = Cookies.get('token');

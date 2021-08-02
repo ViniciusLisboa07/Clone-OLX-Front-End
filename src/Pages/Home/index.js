@@ -77,6 +77,8 @@ const Page = () => {
                                 <Link key={k} to={`/ads?cat=${i.name}`} className="categoryItem">
                                     <div className="circle">
                                         <img src={i.img} alt="" />
+                                        {console.log(i.img)}
+                                        {console.log(typeof i.img)}
                                     </div>
                                     <span>{i.name}</span>
                                 </Link>
