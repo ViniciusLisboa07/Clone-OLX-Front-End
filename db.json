@@ -133,7 +133,11 @@
         {"img": "assets\\3.jpg"}
       ],
       "userInfo": [
-        {"mail": "viniciuslisboa1001@gmail.com"}
+        {
+          "mail": "viniciuslisboa1001@gmail.com",
+          "name": "vinicius",
+          "stateName": "PR"
+        }
       ],
       "id": 6
     },

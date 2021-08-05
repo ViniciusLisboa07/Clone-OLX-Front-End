@@ -29,9 +29,9 @@ a {
         font-weight: bold;
     }
 
-    .logo-1 { color: #FF0000; }
-    .logo-2 { color: #00FF00; }
-    .logo-3 { color: #0000FF; }
+    .logo-1 { color: #9027b0; }
+    .logo-2 { color: #85d43e; }
+    .logo-3 { color: #fd7e14; }
 }
 
 nav {
@@ -62,19 +62,19 @@ nav {
  
             
             &:hover{
-                color: #333;
+                color: #6E0AD6;
             }
        
             &.button{
-                background-color: #FF8100;
-                border-radius: 4px;
+                background-color: rgb(247, 131, 35);
+                border-radius: 15px;
                 color: white;
-                padding: 5px 10px;
+                padding: 10px 15px;
             }
             
             
             &.button:hover{
-                background-color: #E57706;
+                background-color: #F99D53;
             }
         }
         

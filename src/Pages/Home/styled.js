@@ -34,11 +34,11 @@ export const SearchArea = styled.div`
             }
 
             button {
-                background-color: #48AEEF;
+                background-color: white;
                 font-size: 15px;
                 border: 0;
                 border-radius: 0px 5px 5px 0px;
-                color: white;
+                color: #999;
                 height: 60px;
                 padding: 0 20px;
                 cursor: pointer;
@@ -46,7 +46,8 @@ export const SearchArea = styled.div`
             }
             
             button:hover{
-                background-color: #2E86C1;
+                background-color: #A14EBC;
+                color: white;
             }
         }
     }
@@ -93,7 +94,9 @@ export const SearchArea = styled.div`
 
 export const PageArea = styled.div`
 h2{
+    padding: 10px 15px;
     font-size: 20px;
+    color: rgb(74, 74, 74);
 }
 
 .list{
