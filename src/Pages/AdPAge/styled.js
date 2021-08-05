@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Fake = styled.div`
     background-color: #DDD;
-    height: ${props=>props.height || 20}px;
+    height: ${props => props.height || 20}px;
 `
 
 export const PageArea = styled.div`
@@ -12,7 +12,7 @@ margin-top: 20px;
 .box{
     background-color: #FFF;
     border-radius: 5px;
-    box-shadow: 0px 0px 4px #999;
+    border: 1px solid #ccc;
     margin-bottom: 20px;
 }
 
@@ -62,26 +62,52 @@ margin-top: 20px;
 }
 
 .rightSide{
-    width: 250px;
+    width: 300px;
 
-    .price span{
-        color: blue;
-        display: block;
-        font-size: 27px;
-        font-weight: bolder;
+    .price {
+        border-radius: 20px 5px 5px 20px;
+        background-color: #6E0AD6;
+    }
+    
+    .price h2 {
+        color: white;
+        padding: 5px;
+        font-size: 35px;
+        font-weight: normal;
     }
 
+    .createdBy {
+        border-top: 4px solid #10CE64;
+    }
+    .createdBy div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .createdBy small{
+        display: block;
+        color: #999;
+        margin-top: 10px;
+    }
+    
     .contactSellerLink {
-        background-color: #0000FF;
+        background-color: rgb(247, 131, 35);
         color: white;
-        height: 30px;
-        border-radius: 5px;
+        padding: 10px 15px;
+        border-radius: 15px;
         display: flex;
         justify-content: center;
         align-items: center;
         text-decoration:none;
         margin-bottom: 20px;
+        transition: all 0.2s;
     }
+
+    .contactSellerLink:hover{
+        background-color: #F99D53;
+    }
+
 }
 
 `;

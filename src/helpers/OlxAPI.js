@@ -66,7 +66,7 @@ const OLXApi = {
             return error;
         }
 
-        if(json[0].password != password){
+        if(json[0].password !== password){
             console.log(typeof password)
             var error = "Senha incorreta!";
             return error;

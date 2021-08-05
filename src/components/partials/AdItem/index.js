@@ -15,7 +15,6 @@ export default (props) => {
     return (
         <Item className="adItem">
             <Link to={`/ad/${props.data.id}`}>
-
                 <div className="itemImg">
                     <img src={props.data.img} alt=""></img>
                 </div>
