@@ -2,7 +2,13 @@ import  Cookies  from 'js-cookie';
 
 export const isLogged = () => {
     let token = Cookies.get('token');
-    return (token) ? true : false;
+    if(token !== undefined){
+        token = true
+    } else {
+        token = false
+    }
+    
+    return token
 }
 
 export const doLogin = (token, rememberPassword = false) => {
