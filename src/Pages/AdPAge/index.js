@@ -1,13 +1,13 @@
 import { React, useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import { PageArea, Fake } from './styled';
+import { useParams, Link } from 'react-router-dom';
+import { PageArea, Fake, OthersArea, BreadCrumb } from './styled';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 
 import { PageContainer, PageTitle, ErrorMessage } from '../../components/MainComponents';
 import AdItem from '../../components/partials/AdItem';
 
-import useApi from '../../helpers/OlxAPI'
+import useApi from '../../helpers/OlxAPI';
 
 const Page = () => {
     const api = useApi();
@@ -25,10 +25,21 @@ const Page = () => {
         }
 
         getAdInfo(id);
-    }, [])
+    }, []);
 
     return (
         <PageContainer>
+            {adInfo.category && 
+                <BreadCrumb>
+                    Você está aqui:
+                    <Link to="/">Home</Link>
+                    /
+                    <Link to={`/ads?state=${adInfo.userInfo.stateName}`}>{adInfo.userInfo.stateName}</Link>
+                    /
+                    <Link to={`/ads?state=${adInfo.userInfo.stateName}&cat=${adInfo.category.name}`}>{adInfo.category.name}</Link>
+                    /  {adInfo.title}
+                </BreadCrumb>
+            }
             <PageArea>
 
                 <div className="leftSide">
@@ -40,7 +51,7 @@ const Page = () => {
                                     {adInfo &&
                                         adInfo.images.map((i, k) => {
                                             <div className="each-slide ">
-                                                <img key={k} src={i} alt=""/>
+                                                <img key={k} src={i} alt="" />
                                             </div>
                                         })
                                     }
@@ -67,12 +78,14 @@ const Page = () => {
                 </div>
 
                 <div className="rightSide">
+                    
                     {adInfo.priceNegotiable &&
                         <div className="box box--padding">
                             {loading && <Fake height={20} />}
                             "Preço Negociável"
                         </div>
                     }
+
                     {!adInfo.priceNegotiable && adInfo.price &&
                         <div className="price">
                             <h2>R$: {adInfo.price} </h2>
@@ -84,27 +97,31 @@ const Page = () => {
                         <>
                             <div className="createdBy box box--padding">
                                 <div>
-                                    <h2>{adInfo.userInfo[0].name}</h2>
+                                    <h2>{adInfo.userInfo.name}</h2>
                                 </div>
-                                <a href={`mailto:${adInfo.userInfo[0].mail}`} target="_blank" className="contactSellerLink">Fale com o vendedor!</a>
-                                <small>E-mail: {adInfo.userInfo[0].mail}</small>
-                                <small>Estado: {adInfo.userInfo[0].stateName}</small>
+                                <a href={`mailto:${adInfo.userInfo.mail}`} target="_blank" className="contactSellerLink">Fale com o vendedor!</a>
+                                <small>E-mail: {adInfo.userInfo.mail}</small>
+                                <small>Estado: {adInfo.userInfo.stateName}</small>
                             </div>
                         </>
                     }
                 </div>
             </PageArea>
 
-            {adInfo.others &&
-                <>
-                    <h2>Outras ofertas do vendedor</h2>
-                    <div className="list">
-                        {adInfo.others.map((i, k) => {
-                            <AdItem key={k} data={i} />
-                        })}
-                    </div>
-                </>
-            }
+            <OthersArea>
+                {adInfo.others &&
+                    <>
+                        <h2>Outras ofertas do vendedor</h2>
+                        <div className="list">
+                            {adInfo.others &&
+                                adInfo.others.map((i, k) =>
+                                    <AdItem className="adItem" key={k} data={i} />
+                                )
+                            }
+                        </div>
+                    </>
+                }
+            </OthersArea>
         </PageContainer>
     );
 

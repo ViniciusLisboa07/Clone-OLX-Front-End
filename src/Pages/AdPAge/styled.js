@@ -111,3 +111,30 @@ margin-top: 20px;
 }
 
 `;
+
+export const OthersArea = styled.div`
+h2{
+    font-size: 20px;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+
+    .adItem{
+        width: 25%;
+    }
+}
+`;
+
+export const BreadCrumb = styled.div`
+font-size: 15px;
+margin-top: 15px;
+
+a{
+    display: inline-block;
+    margin: 0px 5px;
+    text-decoration: underline;
+    color: #000;
+}
+`;

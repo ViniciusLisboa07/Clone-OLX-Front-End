@@ -67,6 +67,11 @@
         "assets\\2.jpg",
         "assets\\3.jpg"
       ],
+      "userInfo": {
+        "name": "Teste da Silva",
+        "mail": "teste@gmail.com",
+        "stateName": "PR"
+      },
       "id": 1
     },
     {
@@ -80,6 +85,11 @@
         "assets\\2.jpg",
         "assets\\3.jpg"
       ],
+      "userInfo": {
+        "mail": "teste@gmail.com",
+        "name": "Teste da Silva",
+        "stateName": "PR"
+      },
       "id": 2
     },
     {
@@ -93,6 +103,11 @@
         "assets\\2.jpg",
         "assets\\3.jpg"
       ],
+      "userInfo": {
+        "mail": "teste@gmail.com",
+        "name": "Teste da Silva",
+        "stateName": "PR"
+      },
       "id": 3
     },
     {
@@ -106,6 +121,11 @@
         "assets\\2.jpg",
         "assets\\3.jpg"
       ],
+      "userInfo": {
+        "mail": "teste@gmail.com",
+        "name": "Teste da Silva",
+        "stateName": "PR"
+      },
       "id": 4
     },
     {
@@ -119,9 +139,13 @@
         "assets\\2.jpg",
         "assets\\3.jpg"
       ],
+      "userInfo": {
+        "mail": "teste@gmail.com",
+        "name": "Teste da Silva",
+        "stateName": "PR"
+      },
       "id": 5
     },
-    
     {
       "title": "Geladeira",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -129,23 +153,32 @@
       "priceNegotiable": false,
       "img": "assets\\1024px-Solid_grey.svg.png",
       "images": [
-        {"img": "assets\\1.jpg"},
-        {"img": "assets\\2.jpg"},
-        {"img": "assets\\3.jpg"}
-      ],
-      "userInfo": [
         {
-          "mail": "viniciuslisboa1001@gmail.com",
-          "name": "vinicius",
-          "stateName": "PR"
+          "img": "assets\\1.jpg"
+        },
+        {
+          "img": "assets\\2.jpg"
+        },
+        {
+          "img": "assets\\3.jpg"
         }
+      ],
+      "userInfo": {
+        "mail": "viniciuslisboa1001@gmail.com",
+        "name": "vinicius",
+        "stateName": "PR"
+      },
+      "others": [
+        {}
       ],
       "id": 6
     },
-
     {
       "title": "Camisa",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "category": {
+        "name": "Roupas"
+      },
       "price": 20,
       "priceNegotiable": false,
       "img": "assets\\1024px-Solid_grey.svg.png",
@@ -153,13 +186,12 @@
         "assets\\1.jpg",
         "assets\\2.jpg",
         "assets\\3.jpg"
-      ], "userInfo": [
-        {
-          "mail": "teste@gmail.com",
-          "name": "Teste da Silva",
-          "stateName": "PR"
-        }
       ],
+      "userInfo": {
+        "mail": "teste@gmail.com",
+        "name": "Teste da Silva",
+        "stateName": "PR"
+      },
       "others": [
         {
           "title": "Blusa",
@@ -199,11 +231,28 @@
             "assets\\3.jpg"
           ],
           "id": 3
+        },
+        {
+          "title": "Moto",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "price": 5000,
+          "priceNegotiable": true,
+          "img": "assets\\1024px-Solid_grey.svg.png",
+          "images": [
+            "assets\\1.jpg",
+            "assets\\2.jpg",
+            "assets\\3.jpg"
+          ],
+          "userInfo": {
+            "mail": "teste@gmail.com",
+            "name": "Teste da Silva",
+            "stateName": "PR"
+          },
+          "id": 4
         }
       ],
       "id": 7
     },
-
     {
       "title": "Camisa Azul",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -215,6 +264,11 @@
         "assets\\2.jpg",
         "assets\\3.jpg"
       ],
+      "userInfo": {
+        "mail": "teste@gmail.com",
+        "name": "Teste da Silva",
+        "stateName": "PR"
+      },
       "id": 8
     },
     {
@@ -228,6 +282,11 @@
         "assets\\2.jpg",
         "assets\\3.jpg"
       ],
+      "userInfo": {
+        "mail": "teste@gmail.com",
+        "name": "Teste da Silva",
+        "stateName": "PR"
+      },
       "id": 9
     },
     {
@@ -242,6 +301,11 @@
         "assets\\2.jpg",
         "assets\\3.jpg"
       ],
+      "userInfo": {
+        "mail": "teste@gmail.com",
+        "name": "Teste da Silva",
+        "stateName": "PR"
+      },
       "id": 10
     },
     {
@@ -255,6 +319,11 @@
         "assets\\2.jpg",
         "assets\\3.jpg"
       ],
+      "userInfo": {
+        "mail": "teste@gmail.com",
+        "name": "Teste da Silva",
+        "stateName": "PR"
+      },
       "id": 11
     }
   ]
